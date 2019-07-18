@@ -18,7 +18,7 @@ public class UserConsumerDemoApplication {
     @Bean
     @LoadBalanced
     public RestTemplate restTemplate() {
-        // 这次我们使用了OkHttp客户端,只需要注入工厂即可
+
         return new RestTemplate(new OkHttp3ClientHttpRequestFactory());
     }
     public static void main(String[] args) {

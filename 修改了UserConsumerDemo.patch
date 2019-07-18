@@ -1,0 +1,16 @@
+Index: user-consumer-demo/src/main/java/com/soft863/demo/userconsumer/UserConsumerDemoApplication.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- user-consumer-demo/src/main/java/com/soft863/demo/userconsumer/UserConsumerDemoApplication.java	(date 1563429532000)
++++ user-consumer-demo/src/main/java/com/soft863/demo/userconsumer/UserConsumerDemoApplication.java	(date 1563429597203)
+@@ -18,7 +18,7 @@
+     @Bean
+     @LoadBalanced
+     public RestTemplate restTemplate() {
+-        // 这次我们使用了OkHttp客户端,只需要注入工厂即可
++
+         return new RestTemplate(new OkHttp3ClientHttpRequestFactory());
+     }
+     public static void main(String[] args) {
